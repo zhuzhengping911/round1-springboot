@@ -1,6 +1,6 @@
 package com.zzp.controller;
 
-import com.zzp.controller.pojo.ZZPProperties;
+import com.zzp.pojo.ZZPProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;

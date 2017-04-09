@@ -1,4 +1,4 @@
-package com.zzp.controller.pojo;
+package com.zzp.pojo;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
