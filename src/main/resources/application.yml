@@ -1,0 +1,16 @@
+server:
+  port: 9090
+zzp:
+  name: 朱正平
+  age: 27
+  height: 182cm
+  weight: 75kg
+  long: 18cm
+rand:
+  str: ${random.value} #32位的随机字符串
+  uuid: ${random.uuid} #uuid
+  num: ${random.int(100)} #100内随机整数
+  num0: ${random.int(0,99)} #0-99内的随机整数
+#spring:
+#  profiles:
+#    active: prod
