@@ -11,6 +11,22 @@ rand:
   uuid: ${random.uuid} #uuid
   num: ${random.int(100)} #100内随机整数
   num0: ${random.int(0,99)} #0-99内的随机整数
-#spring:
-#  profiles:
-#    active: prod
+spring:
+  profiles:
+    active: dev
+zzp2:
+  name: 西科啦啦
+  age: 30
+  height: 175cm
+  weight: 760kg
+  long: 10cm
+  girl:
+    name: Marry.Jean
+    age: 18
+zzp3:
+  name: 北坡卡卡
+  age: 10
+  height: 105cm
+  weight: 30kg
+
+
