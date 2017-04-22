@@ -25,4 +25,8 @@ public class UserService {
     public void updateUser(String user_id, String nickName) {
         userInfoMapper.updateUser(user_id,nickName);
     }
+
+    public void deleteUserByUserId(Integer id) {
+        userInfoMapper.deleteUserByUserId(id);
+    }
 }
