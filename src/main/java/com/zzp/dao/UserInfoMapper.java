@@ -1,8 +1,12 @@
 package com.zzp.dao;
 
+import com.zzp.pojo.UserInfo;
+
 /**
  * Created by zhuzhengping on 2017/4/22.
  */
 public interface UserInfoMapper {
     void createUser(String tel,String pwd);
+
+    UserInfo getUser(Integer id);
 }

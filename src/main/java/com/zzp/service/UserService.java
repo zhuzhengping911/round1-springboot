@@ -1,6 +1,7 @@
 package com.zzp.service;
 
 import com.zzp.dao.UserInfoMapper;
+import com.zzp.pojo.UserInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,5 +16,9 @@ public class UserService {
 
     public void createUser(String tel,String pwd) {
         userInfoMapper.createUser(tel,pwd);
+    }
+
+    public UserInfo getUser(Integer id) {
+        return userInfoMapper.getUser(id);
     }
 }
