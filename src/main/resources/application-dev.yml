@@ -3,3 +3,10 @@ zzp3:
   age: 99
   height: 95cm
   weight: 90kg
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/blog
+    username: root
+    password: 123
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
