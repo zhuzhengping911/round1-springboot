@@ -33,4 +33,9 @@ public class UserInfoImpl implements UserInfoMapper {
             return null;
         }
     }
+
+    @Override
+    public void updateUser(String user_id, String nickName) {
+        jdbcTemplate.update("UPDATE blog.tp_user SET nickname = ? WHERE user_id = ?",nickName,user_id);
+    }
 }

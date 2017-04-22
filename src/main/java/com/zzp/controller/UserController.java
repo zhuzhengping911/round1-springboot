@@ -22,6 +22,11 @@ public class UserController {
         userService.createUser(tel,pwd);
     }
 
+    @PostMapping("/updateUser")
+    public void updateUser(@RequestParam("id") String user_id, @RequestParam("nickName") String nickName){
+        userService.updateUser(user_id,nickName);
+    }
+
     @GetMapping("/getUser/{id}")
     public UserInfo getUser(@PathVariable("id")  Integer id){
         return userService.getUser(id);

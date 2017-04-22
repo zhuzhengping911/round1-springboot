@@ -21,4 +21,8 @@ public class UserService {
     public UserInfo getUser(Integer id) {
         return userInfoMapper.getUser(id);
     }
+
+    public void updateUser(String user_id, String nickName) {
+        userInfoMapper.updateUser(user_id,nickName);
+    }
 }
