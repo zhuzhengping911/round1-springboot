@@ -25,8 +25,7 @@ public class UserServiceTest {
         userService.createUser("13344444444","333333");
         userService.createUser("13355555555","444444");
         userService.createUser("13366666666","555555");
-
-//        Assert.assertEquals(7,userSe);
+        
     }
 
     @Test
