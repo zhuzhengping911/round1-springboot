@@ -3,8 +3,10 @@ package com.zzp.controller;
 import com.zzp.pojo.UserInfo;
 import com.zzp.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.Map;
 
 /**
@@ -25,6 +27,19 @@ public class UserController {
     @PostMapping("/createUser")
     public void createUser(@RequestParam("tel") String tel, @RequestParam("pwd") String pwd){
         userService.createUser(tel,pwd);
+    }
+
+    /**
+     * 添加用户2
+     * @param userInfo
+     */
+    @PostMapping("/createUser2")
+    public String createUser2(@Valid UserInfo userInfo, BindingResult bindingResult){
+        if (bindingResult.hasErrors()){
+            return bindingResult.getFieldError().getDefaultMessage();
+        }
+        userService.createUser(userInfo.getTel(),userInfo.getPassWord());
+        return "OK";
     }
 
     /**
