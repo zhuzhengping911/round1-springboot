@@ -5,6 +5,7 @@ import javax.validation.constraints.Min;
 
 /**
  * Created by zhuzhengping on 2017/4/22.
+ * 实体类，可用于Controller中直接接受参数
  */
 public class UserInfo {
 

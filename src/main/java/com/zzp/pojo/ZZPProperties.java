@@ -5,6 +5,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * Created by zhuzhengping on 2017/4/9.
+ * 直接获取配置文件中的属性，prefix为属性前缀
  */
 @Component
 @ConfigurationProperties(prefix = "zzp")

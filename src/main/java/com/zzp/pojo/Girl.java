@@ -2,6 +2,7 @@ package com.zzp.pojo;
 
 /**
  * Created by zhuzhengping on 2017/4/16.
+ * 当配置文件中的属性为二级，用实体类来接受参数
  */
 public class Girl {
 

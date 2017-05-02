@@ -5,6 +5,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * Created by zhuzhengping on 2017/4/16.
+ * 直接获取配置文件的实体类
  */
 @Component
 @ConfigurationProperties(value = "zzp2")
