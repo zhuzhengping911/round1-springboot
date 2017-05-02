@@ -32,6 +32,7 @@ public class UserController {
     /**
      * 添加用户2
      * @param userInfo
+     * @Valid添加表单验证，BindingResult获取验证结果
      */
     @PostMapping("/createUser2")
     public String createUser2(@Valid UserInfo userInfo, BindingResult bindingResult){
@@ -62,11 +63,19 @@ public class UserController {
         return userService.getUser(id);
     }
 
+    /**
+     * 删除用户
+     * @param id
+     */
     @DeleteMapping("/deleteUserByUserId/{id}")
     public void deleteUserByUserId(@PathVariable("id")  Integer id){
         userService.deleteUserByUserId(id);
     }
 
+    /**
+     * 使用@RequestBody获取参数，用map类型接收，再取出
+     * @param reqMap
+     */
     @PostMapping("/createUserByMap")
     public void createUserByMap(@RequestBody Map<String,Object> reqMap){
         String tel = reqMap.get("tel").toString();

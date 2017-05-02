@@ -10,6 +10,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * Created by zhuzhengping on 2017/4/9.
+ * 读取配置文件
+ * 使用@Value直接读取
+ * 当属性是静态属性时，@Value用于set方法上
  */
 @RequestMapping("/round2")
 @RestController
