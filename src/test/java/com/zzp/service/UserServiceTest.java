@@ -8,6 +8,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 /**
  * Created by zhuzhengping on 2017/4/22.
+ * 测试类
  */
 
 @SpringBootTest
