@@ -4,6 +4,7 @@ import com.zzp.pojo.UserInfo;
 
 /**
  * Created by zhuzhengping on 2017/4/22.
+ * Mapper接口
  */
 public interface UserInfoMapper {
 

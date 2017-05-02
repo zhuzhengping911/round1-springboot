@@ -11,6 +11,8 @@ import java.util.List;
 
 /**
  * Created by zhuzhengping on 2017/4/22.
+ * JDBC连接数据库
+ * 使用JdbcTemplate，需要自己完成SQL
  */
 @Repository
 public class UserInfoImpl implements UserInfoMapper {
