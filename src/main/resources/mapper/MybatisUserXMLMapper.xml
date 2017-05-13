@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zzp.dao.impl.MybatisUserXMLMapper">
+
+	<insert id="createUser" parameterType="java.util.Map">
+		INSERT INTO blog.tp_user(tel,password,nickname,secret) VALUES (#{tel},md5(#{pwd}),#{tel},'')
+	</insert>
+
+	<update id="updateUser">
+		UPDATE blog.tp_user SET nickname = #{nickName} WHERE user_id = #{userId}
+	</update>
+
+	<select id="getUser" resultType="com.zzp.pojo.UserInfo">
+		SELECT tel,nickname,password FROM blog.tp_user WHERE user_id = #{id}
+	</select>
+
+	<delete id="deleteUserByUserId">
+		DELETE FROM blog.tp_user WHERE tel = #{tel}
+	</delete>
+	
+</mapper>

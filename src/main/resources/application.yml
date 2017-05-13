@@ -28,5 +28,6 @@ zzp3:
   age: 10
   height: 105cm
   weight: 30kg
-
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
 
