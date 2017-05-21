@@ -58,11 +58,6 @@ public class UserController {
      * @param user_id 用户ID
      * @param nickName 昵称
      */
-    @ApiOperation(value = "更新用户信息",notes = "更新用户昵称")
-    @ApiImplicitParams({
-            @ApiImplicitParam(name = "id",value = "用户id",required = true,dataType = "String"),
-            @ApiImplicitParam(name = "nickName",value = "用户昵称",required = true,dataType = "String")
-    })
     @PutMapping("/updateUser/{id}")
     public void updateUser(@PathVariable("id") String user_id, @RequestParam("nickName") String nickName){
         userService.updateUser(user_id,nickName);
@@ -73,8 +68,6 @@ public class UserController {
      * @param id 用户Id
      * @return
      */
-    @ApiOperation(value = "获取用户信息",notes = "返回用户信息")
-    @ApiImplicitParam(name = "id",value = "用户id",required = true,dataType = "Integer")
     @GetMapping("/getUser/{id}")
     public UserInfo getUser(@PathVariable("id")  Integer id){
         return userService.getUser(id);
@@ -84,8 +77,6 @@ public class UserController {
      * 删除用户
      * @param id
      */
-    @ApiOperation(value = "删除用户",notes = "根据用户id删除用户")
-    @ApiImplicitParam(name = "id",value = "用户id",required = true,dataType = "Integer")
     @DeleteMapping("/deleteUserByUserId/{id}")
     public void deleteUserByUserId(@PathVariable("id")  Integer id){
         userService.deleteUserByUserId(id);
@@ -95,8 +86,6 @@ public class UserController {
      * 使用@RequestBody获取参数，用map类型接收，再取出
      * @param reqMap
      */
-    @ApiOperation(value = "获取用户信息",notes = "返回用户信息")
-    @ApiImplicitParam(name = "Map",value = "map集合",required = true,dataType = "Map")
     @PostMapping("/createUserByMap")
     public void createUserByMap(@RequestBody Map<String,Object> reqMap){
         String tel = reqMap.get("tel").toString();
