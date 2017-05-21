@@ -14,6 +14,8 @@ import java.util.Map;
 
 /**
  * Created by zhuzhengping on 2017/4/22.
+ * 使用mybatis或jpa等orm框架后，jdbc链接将被取代
+ * 切勿在代码中使用两种链接方法
  */
 @RequestMapping("/user")
 @RestController
