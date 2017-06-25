@@ -20,6 +20,9 @@ public class UserInfo implements Serializable{
     @Min(value = 000000,message = "密码设定不正确")
     private String passWord;
 
+    public UserInfo() {
+    }
+
     @Override
     public String toString() {
         return "UserInfo{" +
