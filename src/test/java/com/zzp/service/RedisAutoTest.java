@@ -50,8 +50,7 @@ public class RedisAutoTest {
     @Test
     public void testobjSerializer() throws InterruptedException {
         UserInfo user = new UserInfo("111111","snow","112358");
-        Template.opsForValue().set("User:zzp",user);
-        Assert.assertEquals(true,redisTemplate.hasKey("User:zzp"));
-        Assert.assertEquals(true,redisTemplate.hasKey("User:zzq"));
+        Template.opsForValue().set("User:snow",user);
+        Assert.assertEquals(true,redisTemplate.hasKey("User:snow"));
     }
 }
