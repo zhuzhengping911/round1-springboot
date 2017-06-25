@@ -53,4 +53,9 @@ public class RedisAutoTest {
         Template.opsForValue().set("User:snow",user);
         Assert.assertEquals(true,redisTemplate.hasKey("User:snow"));
     }
+
+    @Test
+    public void useJedis() throws InterruptedException {
+
+    }
 }
