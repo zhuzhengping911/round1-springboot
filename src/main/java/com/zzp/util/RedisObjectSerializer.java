@@ -8,6 +8,7 @@ import org.springframework.data.redis.serializer.SerializationException;
 
 /**
  * Created by zhuzhengping on 2017/6/25.
+ * 序列化与反序列化
  */
 public class RedisObjectSerializer implements RedisSerializer<Object> {
 

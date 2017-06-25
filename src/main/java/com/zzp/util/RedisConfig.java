@@ -24,6 +24,10 @@ public class RedisConfig {
         return  new JedisConnectionFactory();
     }
 
+    /**
+     * 存入对象tostring后的信息
+     * @return
+     */
     @Bean
    public RedisTemplate<String,String> redisTemplate(){
         RedisTemplate<String,String> redisTemplate = new StringRedisTemplate();
@@ -37,6 +41,10 @@ public class RedisConfig {
         return redisTemplate;
     }
 
+    /**
+     * 存入对象序列化信息
+     * @return
+     */
     @Bean
     public RedisTemplate<String,UserInfo> redisTemplate2(){
         RedisTemplate<String,UserInfo> redisTemplate = new RedisTemplate<String,UserInfo>();
