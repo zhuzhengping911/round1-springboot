@@ -21,6 +21,7 @@ public class ResultController {
     /**
      * 返回体测试
      * @param name
+     * 
      * @return
      */
     @RequestMapping(value = "/getResult",method = RequestMethod.POST)
@@ -37,7 +38,7 @@ public class ResultController {
         }catch (Exception e){
             result =  exceptionHandle.exceptionGet(e);
         }
-        
+
         return result;
     }
 
