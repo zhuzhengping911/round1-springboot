@@ -21,7 +21,6 @@ public class ResultController {
     /**
      * 返回体测试
      * @param name
-     * 
      * @return
      */
     @RequestMapping(value = "/getResult",method = RequestMethod.POST)
