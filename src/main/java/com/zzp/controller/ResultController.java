@@ -32,6 +32,7 @@ public class ResultController {
             }else if (name.equals("pzz")){
                 result =  ResultUtil.error(ExceptionEnum.USER_NOT_FIND);
             }else{
+                
                 int i = 1/0;
             }
         }catch (Exception e){
