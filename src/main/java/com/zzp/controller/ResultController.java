@@ -35,6 +35,7 @@ public class ResultController {
 
                 int i = 1/0;
             }
+
         }catch (Exception e){
             result =  exceptionHandle.exceptionGet(e);
         }
