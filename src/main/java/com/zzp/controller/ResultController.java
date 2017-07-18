@@ -34,6 +34,7 @@ public class ResultController {
             }else{
 
                 int i = 1/0;
+                
             }
 
         }catch (Exception e){
