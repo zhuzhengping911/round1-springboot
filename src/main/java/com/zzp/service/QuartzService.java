@@ -35,6 +35,7 @@ public class QuartzService {
     public void timerToReport(){
         for (int i = 0; i < 10; i++){
             System.out.println("<================delay :" + i + new SimpleDateFormat("HH:mm:ss").format(new Date()) + "count===============>");
+
         }
     }
 }
