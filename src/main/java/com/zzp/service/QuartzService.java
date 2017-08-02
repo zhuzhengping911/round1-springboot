@@ -28,6 +28,7 @@ public class QuartzService {
     public void timerToReportCount(){
         for (int i = 0; i < 10; i++){
             System.out.println("<================its" + i + "count===============>" + new SimpleDateFormat("HH:mm:ss").format(new Date()));
+
         }
     }
 //    第一次启动在项目启动后延迟50秒开始，之后每6秒执行一次
