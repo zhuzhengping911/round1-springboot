@@ -22,6 +22,7 @@ public class QuartzService {
     @Scheduled(fixedRate = 5000)
     public void timerToZZP(){
         System.out.println("ZZP:" + new Random().nextLong() + new SimpleDateFormat("HH:mm:ss").format(new Date()));
+        
     }
 //    项目启动后每50秒启动
     @Scheduled(fixedDelay = 50000)
