@@ -17,12 +17,13 @@ public class QuartzService {
     @Scheduled(cron = "0 0/1 * * * ?")
     public void timerToNow(){
         System.out.println("now time:" + new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()));
+        
     }
 //    项目运行后的每5秒一次
     @Scheduled(fixedRate = 5000)
     public void timerToZZP(){
         System.out.println("ZZP:" + new Random().nextLong() + new SimpleDateFormat("HH:mm:ss").format(new Date()));
-        
+
     }
 //    项目启动后每50秒启动
     @Scheduled(fixedDelay = 50000)
