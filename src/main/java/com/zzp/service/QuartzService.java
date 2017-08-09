@@ -22,6 +22,7 @@ public class QuartzService {
 //    项目运行后的每5秒一次
     @Scheduled(fixedRate = 5000)
     public void timerToZZP(){
+
         System.out.println("ZZP:" + new Random().nextLong() + new SimpleDateFormat("HH:mm:ss").format(new Date()));
 
     }
@@ -46,6 +47,6 @@ public class QuartzService {
         System.out.println(Math.round(-11.5));
         float f = 3.4f;
         System.out.println(f);
-        
+
     }
 }
