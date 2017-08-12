@@ -31,6 +31,7 @@ public class QuartzService {
     @Scheduled(fixedDelay = 50000)
     public void timerToReportCount(){
         for (int i = 0; i < 10; i++){
+
             System.out.println("<================its" + i + "count===============>" + new SimpleDateFormat("HH:mm:ss").format(new Date()));
         }
     }
