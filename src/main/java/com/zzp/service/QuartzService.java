@@ -46,7 +46,7 @@ public class QuartzService {
     }
 
     public static void main(String[] args) {
-        
+
         System.out.println(Math.round(1.5));
         System.out.println(Math.round(-11.5));
         float f = 3.4f;
