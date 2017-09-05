@@ -28,6 +28,7 @@ public class HttpAspect {
     private ExceptionHandle exceptionHandle;
 
     @Pointcut("execution(public * com.zzp.controller.*.*(..))")
+//    @Pointcut("@annotation(logOnly)")
     public void log(){
 
     }
