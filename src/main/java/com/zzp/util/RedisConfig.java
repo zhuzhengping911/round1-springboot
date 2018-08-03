@@ -21,6 +21,7 @@ public class RedisConfig {
 
     @Bean
     JedisConnectionFactory jedisConnectionFactory(){
+
         return  new JedisConnectionFactory();
     }
 
@@ -31,7 +32,8 @@ public class RedisConfig {
     @Bean
    public RedisTemplate<String,String> redisTemplate(){
         RedisTemplate<String,String> redisTemplate = new StringRedisTemplate();
-        redisTemplate.setConnectionFactory(jedisConnectionFactory());Jackson2JsonRedisSerializer jackson2JsonRedisSerializer = new Jackson2JsonRedisSerializer(Object.class);
+        redisTemplate.setConnectionFactory(jedisConnectionFactory());
+        Jackson2JsonRedisSerializer jackson2JsonRedisSerializer = new Jackson2JsonRedisSerializer(Object.class);
         ObjectMapper om = new ObjectMapper();
         om.setVisibility(PropertyAccessor.ALL, JsonAutoDetect.Visibility.ANY);
         om.enableDefaultTyping(ObjectMapper.DefaultTyping.NON_FINAL);

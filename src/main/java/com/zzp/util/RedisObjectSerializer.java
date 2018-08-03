@@ -10,7 +10,7 @@ import org.springframework.data.redis.serializer.SerializationException;
  * Created by zhuzhengping on 2017/6/25.
  * 序列化与反序列化
  */
-public class RedisObjectSerializer implements RedisSerializer<Object> {
+public class RedisObjectSerializer implements RedisSerializer<Object>  {
 
     private Converter<Object,byte[]> serializer = new SerializingConverter();
     private Converter<byte[],Object> deserializer = new DeserializingConverter();

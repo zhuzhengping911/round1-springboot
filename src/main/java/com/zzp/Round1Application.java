@@ -2,7 +2,9 @@ package com.zzp;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.annotation.EnableScheduling;
@@ -20,6 +22,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 /**
  * 启动类
  */
+@EnableAutoConfiguration(exclude = RedisAutoConfiguration.class)
 @RequestMapping(value = "/")
 @RestController
 @SpringBootApplication
