@@ -57,5 +57,6 @@ public class Round1Application {
 				.contact("ZZP")
 				.version("0.1")
 				.build();
+
 	}
 }
